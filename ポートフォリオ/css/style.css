@@ -9,12 +9,40 @@ body {
     font-family:  "Edu TAS Beginner","筆記体", "Plantagenet Cherokee", "Noto Sans", "Noto Sans JP", "Alex Brush", sans-serif;
     line-height: 1.7;
     color: #595751;
+    background-color:none;
 }
 a {
-    text-decoration: none;
+    text-decoration: none;   
 }
 img {
     max-width: 100%;
+}
+.sub-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    list-style: none;
+    right: 20px;
+}
+.sub-nav li {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-left: 900px;
+    border-color: #595751;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+}    
+.sub-nav a {
+    font-family: "Edu TAS Beginner";
+    color: #595751;
+    background: none;
+    font-size: 20px;
+    
+}
+.sub-nav :hover {
+    text-decoration: #595751;
 }
 
 
@@ -29,7 +57,7 @@ img {
     right: 20px;
 }
 .main-nav li {
-    margin-left: 36px;
+    margin-left: 18px;
 }    
 .main-nav a {
     font-family: "Edu TAS Beginner";
@@ -40,8 +68,8 @@ img {
 }
 .page-header {
     display: flex;
-    margin-right: 40px;
-    margin-left: 600px;
+    margin-right: 20px;
+    margin-left: 700px;
 
 }
 .page-header wrapper {
@@ -61,15 +89,15 @@ img {
     color: #6d6c6a;
     text-align: center;
     font-family: "Edu TAS Beginner";
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.8px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
-.home-content h2 {
+.home-content h1 {
     color: #404040;
     font-family: "Plantagenet Cherokee";
     font-size: 120px;
@@ -77,6 +105,7 @@ img {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 3.4px;
+    margin-top: 300px;
     margin-bottom: 0;
 }
 .home-content h3 {
@@ -107,6 +136,7 @@ img {
     padding: 18px 18px 0;
 }
 .button:hover {
+    color: #819AA9;
     border-bottom: 1px #819AA9 solid;
 }
 
@@ -115,20 +145,26 @@ img {
     background-size: cover;
     background-position: top;
 }
-
 #home {
     background-image: url(../images/main-bg.jpg);
-    min-height: 100vh;
+    min-height: 1000px;
+    min-width: 100vh;
 }
 #home .page-title {
     text-transform: none;
 }
 
+
 /* ABOUT
 ------------------------------ */
+.about-content section {
+    width: auto;
+    height: 1200px;
+}  
 .about-content {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 0%;
+    background: #fff;
 }
 .about-content hr {
     border: none;
@@ -142,7 +178,7 @@ img {
     color: #404040;
     text-align: center;
     font-family: "Edu TAS Beginner";
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -155,23 +191,26 @@ img {
 .about-content h2 {
     color: #4A6D84;
     font-family: "Plantagenet Cherokee";
-    font-size: 60px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 3.4px;
     margin-bottom: 50px;
-    margin-right: 700px;
-    margin-left: 25px;
+    margin-right: 800px;
+    margin-left: 40px;
+    padding-top: 80px;
 }
 .about-content img {
+    width: 225px;
+    height: 450px;
     margin-top: -80px;
     margin-right: 25px;
     margin-left: 700px; 
 }
 .about-content2 {
-        margin-top: -400px;
-        margin-left: 300px; 
+    margin-top: -350px;
+    margin-left: 200px; 
 }
 .about-content2 h3 {
     color: #997973;
@@ -182,9 +221,15 @@ img {
     line-height: normal;
     letter-spacing: 3.4px;
     margin-right: 700px;
-    margin-left: 25px;
+    margin-left: 40px;
 }
-.about-content2 h4 {
+.about-content2 img {
+    width: 360x;
+    height: 120px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.about-content3 h4 {
     color: #7c8b95;
     font-family: "Plantagenet Cherokee";
     font-size: 30px;
@@ -192,12 +237,265 @@ img {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 3.4px;
-    margin-top: 50px;
-    margin-right: 500px;
-    margin-left: 300px;
+    margin-top: 80px;
+    margin-right: 300px;
+    margin-left: 500px;
 }
-.about-content2 img {
-    width: 40%;
-    height: 40%;
+.about-content3 {
+    margin-top: -50px;
+    margin-left: 100px; 
+}
+.about-content3 img {
+    width: 360px;
+    height: 120px;
+    margin-left: 300px;
     margin-bottom: 20px;
 }
+.about-button {
+    background-color: #fff;
+    width: auto;
+    height: 200px;
+}
+
+/* CONCEPT
+------------------------------ */
+.concept-content section {
+    width: auto;
+    height: 1200px;    
+}
+   .concept-content {
+    background: rgba(232, 232, 231, 1);
+    text-align: center;
+    margin-top: 0%;
+	min-width: 100vh;
+    min-height: 1000px;     
+}
+.concept-content h2 {
+    color: #4A6D84;
+    font-family: "Plantagenet Cherokee";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.4px;
+    margin-bottom: 100px;
+    margin-right: 750px;
+    margin-left: 30px;
+    padding-top: 80px;
+}
+.concept-content p {
+    color: #404040;
+    text-align: center;
+    font-family: "Plantagenet Cherokee";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin: 0;
+    padding:80px;
+    border:1px solid #595751;
+    background-color:#e4c5c5;
+}    
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.menu li {
+    font-size: 30px;  
+    padding: 8px 25px;
+    margin-top: -90px;
+}    
+.concept-content span {
+    color: #C54C4C;
+}
+.concept-button { 
+    background-color: rgba(232, 232, 231, 1);
+    width: auto;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* WORK
+------------------------------ */
+.work-content section {
+    width: auto;
+    height: 1200px;
+}  
+.work-content {
+    background: rgba(214, 183, 181, 1);
+    text-align: center;
+    margin-top: 0%;
+	min-width: 100vh;
+    min-height: 1000px;     
+}
+.work-content h2 {
+    color: #F8F8F6;
+    font-family: "Plantagenet Cherokee";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.4px;
+    margin-bottom: 100px;
+    margin-right: 750px;
+    margin-left: 30px;
+    padding-top: 80px;
+}
+.work-content p {
+    color: #404040;
+    text-align: center;
+    font-family: "Plantagenet Cherokee";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin: 0;
+    padding:80px;
+}    
+.work-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.work-nav li {
+    font-size: 30px;  
+    padding: 8px 25px;
+    margin-top: -90px;
+} 
+.work-button {
+    background-color: rgba(214, 183, 181, 1);
+    width: auto;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}   
+
+
+/* SKILL
+------------------------------ */
+.skill-content section {
+    width: auto;
+    height: 1200px;
+}  
+.skill-content {
+    background: rgba(248, 248, 246, 1);
+    text-align: center;
+    margin-top: 0%;
+	min-width: 100vh;
+    min-height: 1000px;     
+}
+.skill-content h2 {
+    color: #4A6D84;
+    font-family: "Plantagenet Cherokee";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.4px;
+    margin-bottom: 100px;
+    margin-right: 750px;
+    margin-left: 30px;
+    padding-top: 80px;
+}
+.skill-content p {
+    color: #404040;
+    text-align: center;
+    font-family: "Plantagenet Cherokee";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin: 0;
+    padding:80px;
+}    
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.menu li {
+    font-size: 30px;  
+    padding: 8px 25px;
+    margin-top: -90px;
+}   
+.skill-button {
+    background-color: rgba(248, 248, 246, 1);
+    width: auto;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+} 
+
+
+/* CONTACT
+------------------------------ */
+.contact-content section {
+    width: auto;
+    height: 1200px;
+}  
+.contact-content {
+    background: rgba(195, 202, 206, 1);
+    text-align: center;
+    margin-top: 0%;
+	min-width: 100vh;
+    min-height: 1000px;     
+}
+.contact-content h2 {
+    color: #F8F8F6;
+    font-family: "Plantagenet Cherokee";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.4px;
+    padding-top: 80px;
+    text-align: center;
+}
+.contact-content p {
+    color: #404040;
+    text-align: center;
+    font-family: "Plantagenet Cherokee";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    margin: 0;
+    padding:80px;
+}    
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.menu li {
+    font-size: 30px;  
+    padding: 8px 25px;
+    margin-top: -90px;
+}
+.contact-button {
+    background-color: rgba(195, 202, 206, 1);
+    width: auto;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}    
